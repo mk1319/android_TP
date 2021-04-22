@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             Bitmap bitmap = null;
             try
             {
-                InputStream input = new java.net.URL("https://images.unsplash.com/photo-1612991236700-86b209b8dfbc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1949&q=80").openStream();
+                InputStream input = new java.net.URL("https://wallpapercave.com/wp/enoyJRu.jpg").openStream();
                 bitmap = BitmapFactory.decodeStream(input);
             }
             catch (Exception e)
@@ -60,19 +60,19 @@ public class MainActivity extends AppCompatActivity {
             imageview.setImageBitmap(image);
         }
 
-        @Override
-        protected void onPreExecute()
-        {
-            pd = new ProgressDialog(MainActivity.this);
-            pd.setTitle("Please wait...");
-            pd.setMessage("Downloading Image");
-            pd.setCancelable(false);
-            pd.setIndeterminate(false);
-            pd.show();
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {}
+//        @Override
+//        protected void onPreExecute()
+//        {
+//            pd = new ProgressDialog(MainActivity.this);
+//            pd.setTitle("Please wait...");
+//            pd.setMessage("Downloading Image");
+//            pd.setCancelable(false);
+//            pd.setIndeterminate(false);
+//            pd.show();
+//        }
+//
+//        @Override
+//        protected void onProgressUpdate(Void... values) {}
     }
 
 

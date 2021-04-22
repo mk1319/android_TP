@@ -1,4 +1,4 @@
-package com.example.email;
+ package com.example.email;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;

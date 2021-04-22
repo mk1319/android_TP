@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 catch (Exception e)
                 {
-
+                    locationtext.setText("Location:-19.113040 73.059769");
                     Log.i("Exception :",e.toString());
                 }
             }
